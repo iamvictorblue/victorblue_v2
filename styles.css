@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -607,6 +607,18 @@
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
   font-size: 2.5rem;
+}
+
+.services h3 {
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
 }
 
 .services__wrapper {

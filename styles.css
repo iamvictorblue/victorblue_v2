@@ -42,10 +42,10 @@
   justify-content:center;
   height: 80px;
   z-index: 1;
-  width: 100%;
+  width: 50%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 25px;
 }
 
 
@@ -128,7 +128,8 @@
     max-width: 1300px;
     padding: 0;
   }
-
+}   */
+/*  
   .navbar__menu {
     display: grid;
     grid-template-columns: auto;
@@ -617,8 +618,8 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
-  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .services__wrapper {

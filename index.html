@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('fixed', window.scrollY > 800);
+      });
+    </script>
   </head>
   <body>
     <div class="logo" id="home">
@@ -37,7 +43,7 @@
             <a href="#about" class="navbar__links" id="services-page">BIO</a>
           </li>
           <li class="navbar__item">
-            <a href="#services" class="navbar__links" id="services-page">TOUR</a>
+            <a href="#services" class="navbar__links" id="services-page">EVENTS</a>
           </li>
           <li class="navbar__item">
             <a href="#merch" class="navbar__links" id="services-page"
@@ -78,7 +84,7 @@
 
     <!-- Tour Section -->
     <div class="services" id="services">
-      <h1>Tour</h1>
+      <h1>Events</h1>
       <h3>4/27/2023  -  Spring Indie Fest 2023 (Mayagüez,PR)</h3>
       <h3>5/15/2023  -  ??? (Mayagüez,PR)</h3>
       <h3>6/02/2023  -  ??? (San Juan, PR)</h3>

@@ -12,15 +12,16 @@
   height: 200px;
   display: flex;
   justify-content: center;
-  align-items:flex-start;
+  align-items:center;
   font-size: 1.2rem;
-  position: sticky;
+  position: relative;
   top: 0;
-  z-index: 999;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   font-family: "Trirong", serif;
- 
-  /* display: none; */
 }  
+
 .topbar {
   background: linear-gradient(to bottom, #000000, #0673b6);
   height: 200px;
@@ -44,6 +45,17 @@
   margin: 0 auto;
   padding: 0 25px;
 }
+
+@media screen and (max-width: 480px) {
+  .navbar__container {
+    display:contents;
+    justify-content: center;
+    height: 80px;
+    z-index: 1;
+    width: 30%;
+    max-width: 0px;
+  }
+} 
 
 
 
@@ -89,6 +101,12 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  width: 100%;
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -666,6 +684,11 @@
 .services__card h2 {
   text-align: center;
 }
+.services__card h3 {
+  text-align: center;
+  font-size: 1.0rem;
+}
+
 
 .services__card p {
   text-align: center;

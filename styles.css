@@ -13,7 +13,7 @@
   display: flex;
   justify-content: center;
   align-items:center;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   position: relative;
   top: 0;
   left: 0;
@@ -243,12 +243,12 @@
   padding: 30px;
 }
 .responsive {
-  width: 45%;
+  width: 60%;
   height: auto;
 }
 
 .responsive3 {
-  width: 50%;
+  width: 70%;
   height: auto;
 }
 
@@ -326,6 +326,19 @@
   height: 90%;
   text-align: center;
   padding: 30px;
+}
+
+.hero__container h1 {
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  align-items: center;
+  font-size: 1.0rem;
 }
 
 .hero__heading {
@@ -634,7 +647,8 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  align-items: center;
+  font-size: 1.0rem;
 }
 
 .services__wrapper {

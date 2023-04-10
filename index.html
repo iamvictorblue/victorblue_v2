@@ -17,7 +17,11 @@
     <script>
       window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('fixed', window.scrollY > 800);
+        if (window.innerWidth >= 480) {
+          navbar.classList.toggle('fixed', window.scrollY > 1000);
+        } else {
+          navbar.classList.toggle('fixed', window.scrollY > 800);
+        }
       });
     </script>
         <!-- Google tag (gtag.js) -->

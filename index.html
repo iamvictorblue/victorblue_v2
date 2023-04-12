@@ -13,16 +13,37 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script>
       window.addEventListener('scroll', function() {
         var navbar = document.querySelector('.navbar');
         if (window.innerWidth >= 480) {
-          navbar.classList.toggle('fixed', window.scrollY > 1000);
+          navbar.classList.toggle('fixed', window.scrollY > 900);
         } else {
           navbar.classList.toggle('fixed', window.scrollY > 800);
         }
       });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+        var footer = document.querySelector('.footer__container');
+        if (window.innerWidth >= 480) {
+          if (window.scrollY > 800) {
+          footer.classList.add('fixed-footer');
+          } else {
+          footer.classList.remove('fixed-footer');
+          }       
+        }      
+        else {
+          if (window.scrollY > 800) {
+            footer.classList.add('fixed-footer');
+          } else {
+            footer.classList.remove('fixed-footer');
+          }
+        }
+      });
+
+
     </script>
         <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRLS85KYSN"></script>
@@ -30,10 +51,11 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-KRLS85KYSN');
     </script>
   </head>
+
+
   <body>
     <div class="logo" id="home">
       <div class="logo__container">
@@ -123,15 +145,26 @@
       <h1>MERCH</h1>
       <div class="services__wrapper">
     
-        <div class="services__card">
-          <img src="images/shirt1.png" alt="chapel" class="responsive4"> 
-          <img src="images/shirt2.png" alt="chapel" class="responsive4">
-          <br>
-          <h3>Todo Va a Estar Bien Shirt $20</h3>
-        </div>
-        
+        <a href="https://victorblue.bandcamp.com/merch/todo-va-a-estar-bien-shirt">
+          <div class="services__card">
+            <img src="images/shirt1.png" alt="chapel" class="responsive4"> 
+            <img src="images/shirt2.png" alt="chapel" class="responsive4">
+            <br>
+            <h3>Todo Va a Estar Bien Shirt $20</h3>
+          </div>
+        </a>
+    
+        <a href="https://victorblue.bandcamp.com/album/todo-va-a-estar-bien">
+          <div class="services__card">
+            <img src="images/TVAEB COVER copy.jpg" alt="tvaeb" class="responsive4"> 
+            <br>
+            <h3>Todo Va a Estar Bien Shirt Digital Album w/ Sticker $8.50</h3>
+          </div>
+        </a>
+    
       </div>
     </div>
+    
 
 
     <!-- Features Section -->
@@ -148,16 +181,17 @@
             <img src="images/logo2.png" alt="logo1" class="responsive"> 
           </div>
           <div class="social__icons">
-            <a href="https://www.facebook.com/victorbluemusic" class="social__icon--link" target="_blank"
-              ><i class="fab fa-facebook"></i
+            <a href="https://open.spotify.com/artist/07zsoNKx5Sr725RpkPxuOn" class="social__icon--link"
+              ><i class="fab fa-spotify"></i
             ></a>
-            <br>
             <a href="https://www.instagram.com/victorbluepr/" class="social__icon--link"
               ><i class="fab fa-instagram"></i
             ></a>
-            <br>
             <a href="https://www.youtube.com/@victorbluemusic/featured" class="social__icon--link"
               ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://www.facebook.com/victorbluemusic" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
             ></a>
           </div>
         </div>

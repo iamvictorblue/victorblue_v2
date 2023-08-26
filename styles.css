@@ -751,6 +751,19 @@
   align-items: center;
   font-size: 1.0rem;
 }
+.events h4 {
+  text-decoration: line-through;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  align-items: center;
+  font-size: 1.0rem;
+}
 
 @media (max-width: 768px) {
   .events h3 {

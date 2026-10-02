@@ -629,6 +629,12 @@
   transition: 0.3s ease-in;
 }
 
+.services__wrapper a:nth-child(1) .services__card {
+  background: linear-gradient(to right, #06293f 0%, #000000 60%, #000000 100%);
+  border: 1px solid #45c2fc;
+  box-shadow: 0 0 18px rgba(69, 194, 252, 0.35);
+}
+
 .services__wrapper a:nth-child(2) .services__card {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(

@@ -179,6 +179,12 @@
   height: auto;
 }
 
+.album__title {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
 .responsive3 {
   width: 70%;
   height: auto;
